@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Students</title>
+</head>
+<body>
+    <ul>
+        
+        <table>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    first name
+                </th>
+                <th>
+                    last name
+                </th>
+                <th>
+                    age
+                </th>
+                <th>
+                    course
+                </th>
+                <th>
+                    email
+                </th>
+                <th>
+                    cover letter
+                </th>
+            </tr>
+            
+                {% for student in students%}
+                <tr>
+                <td>
+                    {{student.id}}
+                </td>
+                <td>
+                    {{student.first_name}}
+                </td>
+                <td>
+                    {{student.last_name}}
+                </td>
+                <td>
+                    {{student.age}}
+                </td>
+                <td>
+                    {{student.course}}
+                </td>
+                <td>
+                    {{student.email}}
+                </td>
+                <td>
+                    {{student.cover_letter}}
+                </td>
+            </tr>
+                {% endfor %}
+            
+        </table>
+        
+    </ul>
+</body>
+</html>
